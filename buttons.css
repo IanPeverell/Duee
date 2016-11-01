@@ -1,0 +1,82 @@
+button {
+    position: relative;
+    display: block;
+    width: 13em;
+    height: 3em;
+    margin: 8px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    letter-spacing: .2em;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    user-select: none;
+    border-radius: 2px;
+    text-align: center;
+    align-items: flex-start;
+    background-color: inherit;
+}
+.flat-btn {color: #000000;}
+.flat-btn-primary {color: #1fbcd2;}
+.flat-btn-secondary {color: #ff4081;}
+.flat-btn-disabled {pointer-events: none; color: #bdbdbd;}
+
+.raised-btn {
+    box-shadow: 0px 0px 6px 1px #a0a0a0;
+    color: #000000;
+}
+.raised-btn-primary {
+    box-shadow: 0px 0px 6px 1px #a0a0a0;
+    color: #ffffff;
+    background-color: #1fbcd2;
+}
+.raised-btn-secondary {
+    box-shadow: 0px 0px 6px 1px #a0a0a0;
+    color: #ffffff;
+    background-color: #ff4081;
+}
+.raised-btn-disabled {
+    pointer-events: none;
+    box-shadow: 0px 0px 6px 1px #a0a0a0;
+    color: #ffffff;
+    background-color: #bdbdbd;
+}
+
+.ripple {
+  position: absolute;
+  background: rgba(0,0,0, 0.15);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.ripple.show {
+  animation: ripple .75s ease-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.cover {
+  position: absolute;
+  background: rgba(0,0,0, 0.15);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.cover.show {
+  animation: cover .75s ease-out;
+}
+
+@keyframes cover {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
