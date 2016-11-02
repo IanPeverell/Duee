@@ -1,0 +1,35 @@
+.textfield-box {
+    margin: 12px;
+    border: none;
+    ont-size: 16px;
+    line-height: 24px;
+    width: 256px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+}
+
+input {
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.870588);
+    cursor: initial;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    height: 100%;
+    border-bottom: 2px solid #bdbdbd;
+}
+
+.textfield-box > input:focus {
+    border-bottom: 2px solid #1fbcd2;
+    transition: border-bottom 0.1s ease 0.1s;
+}

@@ -1,9 +1,11 @@
 <html>
 <head>
     <title>Duee</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="tag.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="buttons.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="textfield.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="switch.css" media="screen"/>
     <script src="buttons.js"></script>
 </head>
 <body>
@@ -13,17 +15,17 @@
         <h2>Button</h2>
         <h3>Flat Button</h3>
         <ul>
-            <li><button class="flat-btn"><span>Default</span></button></li>
-            <li><button class="flat-btn-primary"><span>Primary</span></button></li>
-            <li><button class="flat-btn-secondary"><span>Secondary</span></button></li>
-            <li><button class="flat-btn-disabled"><span>Disabled</span></button></li>
+            <li><button class="flat-btn">Default</button></li>
+            <li><button class="flat-btn-primary">Primary</button></li>
+            <li><button class="flat-btn-secondary">Secondary</button></li>
+            <li><button class="flat-btn-disabled">Disabled</button></li>
         </ul>
         <h3>Raised Button</h3>
         <ul>
-            <li><button class="raised-btn"><span>Default</span></button></li>
-            <li><button class="raised-btn-primary"><span>Primary</span></button></li>
-            <li><button class="raised-btn-secondary"><span>Secondary</span></button></li>
-            <li><button class="raised-btn-disabled"><span>Primary</span></button></li>
+            <li><button class="raised-btn">Default</button></li>
+            <li><button class="raised-btn-primary">Primary</button></li>
+            <li><button class="raised-btn-secondary">Secondary</button></li>
+            <li><button class="raised-btn-disabled">Primary</button></li>
         </ul>
     </div>
 
@@ -31,9 +33,24 @@
         <!-- Tags -->
         <h2>Tags</h2>
         <div class="tag"><span>Text Tag</span></div>
+        <div class="tag"><span><button>Button Tag</button></span></div>
         <div class="tag" type="button">
             <div class="tag-sym">A</div>
-            <span>Text Tag</span>
+            <span><button>Text Tag</button></span>
+        </div>
+    </div>
+
+    <div>
+        <!-- TextField -->
+        <h2>Text Field</h2>
+        <div class="textfield-box">
+            <input placeholder="Text">
+        </div>
+        <div class="textfield-box">
+            <input placeholder="Disabled" disabled="true">
+        </div>
+        <div>
+            <input class="switch" type="checkbox" checked="true">
         </div>
     </div>
 </body>

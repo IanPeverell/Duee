@@ -18,4 +18,4 @@ var addRippleEffect = function (e) {
     return false;
 }
 document.addEventListener('click', addRippleEffect, false);
-document.addEventListener('mouseover', addRippleEffect, false)
+document.addEventListener('mouseover', addRippleEffect, false);
