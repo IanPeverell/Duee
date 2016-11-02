@@ -30,3 +30,11 @@ defaut tag, with only text inside
 #### tag-sym
 
 tag which has a symbol in the front
+
+### Switch
+
+#### switch
+
+### TextField
+
+#### textfield-box
