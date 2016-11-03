@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="textfield.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="switch.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="notif.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="radiobox.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="checkbox.css" media="screen"/>
     <script src="buttons.js"></script>
 </head>
 <body>
@@ -44,14 +46,65 @@
     <div>
         <!-- TextField -->
         <h2>Text Field</h2>
+        <h3>TextField</h3>
         <div class="textfield-box">
             <input placeholder="Text">
         </div>
         <div class="textfield-box">
+            <input>
+            <span class="Float">Float Text</span>
+        </div>
+        <div class="textfield-box">
             <input placeholder="Disabled" disabled="true">
         </div>
+
+        <h3>Switch</h3>
         <div>
             <input class="switch" type="checkbox" checked="true">
+        </div>
+
+        <h3>Radio</h3>
+        <div>
+            <label class="radio">
+                <input id="radio" type="radio" name="radios">
+                <span class="box">
+                    <span class="inner"></span>
+                </span>Label 1
+            </label>
+            <label class="radio">
+                <input id="radio" type="radio" name="radios">
+                <span class="box">
+                    <span class="inner"></span>
+                </span>Label 2
+            </label>
+            <label class="radio">
+                <input id="radio" type="radio" name="radios">
+                <span class="box">
+                    <span class="inner"></span>
+                </span>Label 3
+            </label>
+        </div>
+
+        <h3>Checkbox</h3>
+        <div>
+            <label class="check">
+                <input type="checkbox" name="checks">
+                <span class="box">
+                    <span class="inner"></span>
+                </span>Label 1
+            </label>
+            <label class="check">
+                <input type="checkbox" name="checks">
+                <span class="box">
+                    <span class="inner"></span>
+                </span>Label 2
+            </label>
+            <label class="check">
+                <input type="checkbox" name="checks">
+                <span class="box">
+                    <span class="inner"></span>
+                </span>Label 3
+            </label>
         </div>
     </div>
 

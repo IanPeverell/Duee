@@ -42,9 +42,9 @@
     height: 6px;
     border-bottom: 2px solid #1fbcd2;
     border-left: 2px solid #1fbcd2;
-    -webkit-transform: rotate(-45deg) scale(0);
-    -ms-transform: rotate(-45deg) scale(0);
-    transform: rotate(-45deg) scale(0);
+    -webkit-transform: rotate(315deg) scale(0);
+    -ms-transform: rotate(315deg) scale(0);
+    transform: rotate(315deg) scale(0);
     display: block;
     margin: 4px;
     border-radius: 2px;

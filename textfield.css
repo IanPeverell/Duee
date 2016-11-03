@@ -1,7 +1,7 @@
 .textfield-box {
     margin: 12px;
     border: none;
-    ont-size: 16px;
+    font-size: 16px;
     line-height: 24px;
     width: 256px;
     height: 48px;
@@ -36,4 +36,22 @@ input {
 
 .textfield-box > input:disabled {
     border-bottom: 2px dotted #bdbdbd;
+}
+
+.textfield-box >input + .float {
+    color: #a9a9a9;
+    position: absolute;
+    font-size: 16px;
+    margin-top: -36px;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.textfield-box > input:focus + .float {
+    color: #1fbcd2;
+    position: absolute;
+    font-size: 12px;
+    margin-top: -64px;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
