@@ -31,10 +31,23 @@ defaut tag, with only text inside
 
 tag which has a symbol in the front
 
-### Switch
+### Input
+
+#### textfield-box
+
+A normal input textfield
+
+#### textfield-box float
+
+Advance Input textfield. When you focus on the input field, the placeholder will change into a small and blue one and move above the field
 
 #### switch
 
-### TextField
+A kind of checkbox.
 
-#### textfield-box
+#### radio
+
+#### checkbox
+
+
+
