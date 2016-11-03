@@ -1,0 +1,53 @@
+.check {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 49px;
+    cursor: pointer;
+}
+
+
+.check .box {
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin: 10px 9px 10px 10px;
+    border: 2px solid #000;
+    border-radius: 20%;
+    background-color: #fff;
+}
+
+.check input {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.check input:checked + .box {
+    border: 2px solid #1fbcd2;
+}
+
+.check input:checked + .box .inner {
+    -webkit-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+    opacity: 1;
+}
+
+.check .inner {
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    width: 12px;
+    height: 6px;
+    border-bottom: 2px solid #1fbcd2;
+    border-left: 2px solid #1fbcd2;
+    -webkit-transform: rotate(-45deg) scale(0);
+    -ms-transform: rotate(-45deg) scale(0);
+    transform: rotate(-45deg) scale(0);
+    display: block;
+    margin: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    opacity: 0;
+}
