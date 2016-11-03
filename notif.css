@@ -1,0 +1,20 @@
+.notification {
+    padding: 0.5em;
+}
+
+.notification:before{
+    content: '24';
+    margin-top: -16px;
+    margin-left: 27px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 2em;
+    height: 1em;
+    border-radius: 1em;
+    border: none;
+    background-color: #1fbcd2;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
