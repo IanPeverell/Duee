@@ -14,6 +14,22 @@
     to{transform: rotate(1800deg);}
 }
 
+.circleprocesscell-outer-small {
+    height: 80px;
+    width: 80px;
+    animation: circle-outer-small 12s linear infinite;
+}
+
+@keyframes circle-outer-small {
+    from{transform: rotate(0deg) scale(0.5);}
+    16%{transform: rotate(300deg) scale(0.5);}
+    33%{transform: rotate(600deg) scale(0.5);}
+    50%{transform: rotate(900deg) scale(0.5);}
+    66%{transform: rotate(1200deg) scale(0.5);}
+    83%{transform: rotate(1600deg) scale(0.5);}
+    to{transform: rotate(1800deg) scale(0.5);}
+}
+
 .circleprocesscell-iner {
     height: 80px;
     width: 80px;
@@ -32,13 +48,7 @@
 }
 
 @keyframes dash {
-    from{
-        stroke-dashoffset: 250;
-    }
-    50%{
-        stroke-dashoffset: 400;
-    }
-    to{
-        stroke-dashoffset: 250;
-    }
+    from{stroke-dashoffset: 250;}
+    50%{stroke-dashoffset: 400;}
+    to{stroke-dashoffset: 250;}
 }

@@ -2,19 +2,24 @@
     padding: 0.5em;
 }
 
+.notification-ico {
+    pointer-events: none;
+}
+
 .notification:before{
-    content: '24';
+    content: '';
     margin-top: -16px;
     margin-left: 27px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    width: 2em;
-    height: 1em;
-    border-radius: 1em;
+    width: 1.5em;
+    height: 0.5em;
+    border-radius: 0.75em;
     border: none;
     background-color: #1fbcd2;
     position: absolute;
     color: #fff;
     text-align: center;
     font-size: 12px;
+    pointer-events: none;
 }
