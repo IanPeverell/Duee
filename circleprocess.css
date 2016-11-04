@@ -11,17 +11,17 @@
 
 .circleprocess {
   stroke-dasharray: 400;
-  animation: dash 1.8s linear infinite;
+  animation: dash 2.3s linear infinite;
 }
 
 @keyframes dash {
     from{
-        stroke-dashoffset: 220;
+        stroke-dashoffset: 250;
     }
-    50%{
+    33%{
         stroke-dashoffset: 400;
     }
     to {
-        stroke-dashoffset: 220;
+        stroke-dashoffset: 250;
     }
 }

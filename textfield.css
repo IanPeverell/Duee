@@ -9,7 +9,7 @@
     position: relative;
 }
 
-input {
+.textfield {
     padding: 0px;
     position: relative;
     width: 100%;
@@ -29,25 +29,46 @@ input {
     border-bottom: 2px solid #bdbdbd;
 }
 
-.textfield-box > input:focus {
+.textfield-float {
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.870588);
+    cursor: initial;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    height: 100%;
+    border-bottom: 2px solid #bdbdbd;
+}
+
+.textfield-box > .textfield:focus {
     border-bottom: 2px solid #1fbcd2;
     transition: border-bottom 0.1s ease 0.1s;
 }
 
-.textfield-box > input:disabled {
+.textfield-box > .textfield:disabled {
     border-bottom: 2px dotted #bdbdbd;
 }
 
-.textfield-box >input + .float {
+.textfield-box > .textfield + .float {
     color: #a9a9a9;
     position: absolute;
     font-size: 16px;
     margin-top: -36px;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
+    pointer-events: none;
 }
 
-.textfield-box > input:focus + .float {
+.textfield-box > .textfield:focus + .float {
     color: #1fbcd2;
     position: absolute;
     font-size: 12px;
