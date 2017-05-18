@@ -6,7 +6,7 @@ It's a set of Material Design UI
 
 ## API
 
-###Button
+### Button
 
 #### FlatButton
 flat-button
